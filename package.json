@@ -37,13 +37,13 @@
     "streaming"
   ],
   "private": false,
-  "main": "./dist/src/main.js",
-  "browser": "./dist/browser.js",
+  "typings": "./dist/src/index.d.ts",
+  "main": "./dist/src/index.js",
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "scripts": {
-    "build": "yoshi lint && yoshi build",
+    "build": "yoshi build",
     "build:analyze": "yoshi build --analyze",
     "lint": "yoshi lint",
     "test": "yoshi test --mocha --karma --protractor",

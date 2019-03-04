@@ -24,7 +24,7 @@ import {UploadJob} from './uploader/upload-job';
  * @constructor
  * @doc MediaPlatformPublic
  */
-class MediaPlatform {
+export class MediaPlatform {
   private browserHTTPClient: HTTPClient;
   private fileDownloader: FileDownloader;
   public archiveManager: ArchiveManager;
@@ -92,7 +92,7 @@ class MediaPlatform {
    * @param {DownloadUrlRequest?} downloadUrlRequest
    * @returns {Promise<DownloadUrl>}
    */
-  getDownloadUrl(path: string, downloadUrlRequest?: DownloadUrlRequest): Promise<DownloadUrl> {
+  public getDownloadUrl(path: string, downloadUrlRequest?: DownloadUrlRequest): Promise<DownloadUrl> {
     return this.fileDownloader.getDownloadUrl(path, downloadUrlRequest)
       .then(response => {
         return response;
@@ -101,9 +101,3 @@ class MediaPlatform {
       });
   }
 }
-
-/**
- * @type {MediaPlatform}
- */
-export default MediaPlatform;
-export {MediaPlatform};

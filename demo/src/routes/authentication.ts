@@ -1,4 +1,4 @@
-import {auth} from '../../../src/main';
+import {auth} from '../../../src';
 import {mediaPlatform} from '../facades/media-platform-facade';
 
 const {Token, NS} = auth;

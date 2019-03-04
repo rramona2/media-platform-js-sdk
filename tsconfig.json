@@ -22,7 +22,6 @@
   ],
   "files": [
     "./src/external-types.d.ts",
-    "./src/main.ts",
-    "./browser.ts"
+    "./src/index.ts"
   ]
 }

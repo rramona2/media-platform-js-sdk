@@ -1,6 +1,8 @@
 import * as jwt from 'jsonwebtoken';
+
 import {Token} from './token';
 import {NS} from './NS';
+
 import {Configuration} from '../configuration/configuration';
 import {AuthorizationHeader} from '../../types/media-platform/media-platform';
 
